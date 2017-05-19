@@ -26,6 +26,13 @@ public class App
                     System.out.println(temp);
                 }
             }
+
+            System.out.println("开始构建树......");
+
+            BuildNodeTree bnt = new BuildNodeTree("root_node_id");
+            Node root = bnt.build(nodes);
+            String result = gson.toJson(root);
+            System.out.println(result);
         } catch (Exception e) {
             e.printStackTrace();
         }

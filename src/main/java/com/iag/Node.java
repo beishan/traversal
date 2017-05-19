@@ -1,5 +1,6 @@
 package com.iag;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,6 +21,7 @@ public class Node {
         this.name = name;
         this.value = value;
         this.parentId = parentId;
+        children = new ArrayList<Node>();
     }
 
     @Override

@@ -30,17 +30,20 @@
       "id": "dict1002",
       "name": "河北省",
       "value": "hbs",
+      "parentId": "dict1000",
       "children": [
         {
           "id": "dict1025",
           "name": "石家庄",
           "value": "sjz",
+          "parentId": "dict1002",
           "children": []
         },
         {
           "id": "dict1028",
           "name": "唐山",
           "value": "ts",
+          "parentId": "dict1002",
           "children": []
         }
       ]
