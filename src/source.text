@@ -1,0 +1,49 @@
+{
+  "id": "dict1000",
+  "name": "地址",
+  "value": "dz",
+  "parentId": "root_node_id",
+  "children": [
+    {
+      "id": "dict1001",
+      "name": "河南省",
+      "value": "hns",
+      "parentId": "dict1000",
+      "children": [
+        {
+          "id": "dict1011",
+          "name": "郑州",
+          "value": "zz",
+          "parentId": "dict1001",
+          "children": []
+        },
+        {
+          "id": "dict1012",
+          "name": "洛阳",
+          "value": "ly",
+          "parentId": "dict1001",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "dict1002",
+      "name": "河北省",
+      "value": "hbs",
+      "children": [
+        {
+          "id": "dict1025",
+          "name": "石家庄",
+          "value": "sjz",
+          "children": []
+        },
+        {
+          "id": "dict1028",
+          "name": "唐山",
+          "value": "ts",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
