@@ -20,7 +20,7 @@ public class BuildNodeTree {
                 List<Node> noFathers = new ArrayList<Node>();
 
                 for(Node temp : nodes){
-                    if(lookFather(root, temp)){
+                    if(lookupFather(root, temp)){
                         System.out.println("找到爸爸了");
                     }else {
                         System.out.println("没找到爸爸");
@@ -33,7 +33,7 @@ public class BuildNodeTree {
         }
         throw new Exception("节点列表不能为空");
     }
-    private boolean lookFather(Node father, Node children){
+    private boolean lookupFather(Node father, Node children){
         if(father != null){
             if(father.getId().equals(children.getParentId())){
                 father.getChildren().add(children);
@@ -41,7 +41,7 @@ public class BuildNodeTree {
             }
             if(father.getChildren() != null && father.getChildren().size() > 0){
                 for(Node temp : father.getChildren()){
-                    if(lookFather(temp, children)){
+                    if(lookupFather(temp, children)){
                         return true;
                     }
                 }
